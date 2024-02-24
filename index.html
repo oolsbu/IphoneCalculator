@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="images/calculator icon.png">
+</head>
+<body>
+    <img id="image" src="images/apple-iphone-14-pro-max-2022-medium.png">
+    <img id="wifi" src="images/wifi and battery icon.png">
+    <p id="timeDisplay">Hello</p>
+    <div id="calculator">
+        <div id="text">
+            <input id="input" type="text" readonly>
+        </div>
+        <div id="buttons">
+            <button id="AC" class="executor" onclick="clearInput()">AC</button>
+            <button id="+/-" class="executor" onclick="changeSign()">+/-</button>
+            <button id="%" class="executor" onclick="percent()">%</button>
+            <button id="/" class="operator" onclick="addOperator('/')">/</button>
+            <button id="7" class="number" onclick="addNumber(7)">7</button>
+            <button id="8" class="number" onclick="addNumber(8)">8</button>
+            <button id="9" class="number" onclick="addNumber(9)">9</button>
+            <button id="*" class="operator" onclick="addOperator('*')">x</button>
+            <button id="4" class="number" onclick="addNumber(4)">4</button>
+            <button id="5" class="number" onclick="addNumber(5)">5</button>
+            <button id="6" class="number" onclick="addNumber(6)">6</button>
+            <button id="-" class="operator" onclick="addOperator('-')">-</button>
+            <button id="1" class="number" onclick="addNumber(1)">1</button>
+            <button id="2" class="number" onclick="addNumber(2)">2</button>
+            <button id="3" class="number" onclick="addNumber(3)">3</button>
+            <button id="+" class="operator" onclick="addOperator('+')">+</button>
+            <button id="zero" class="number" onclick="addNumber(0)">0</button>
+            <button id="," class="number" onclick="desimal()">,</button>
+            <button id="=" class="operator" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

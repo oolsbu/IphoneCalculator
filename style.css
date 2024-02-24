@@ -1,0 +1,143 @@
+body {
+    background: radial-gradient(50% 50% at 50% 50%, #6b6b6b 0%, #292929 100%);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 1rem; 
+}
+
+#calculator{
+    display: grid;
+    background-color: black;
+    border-radius: 3rem;
+    width: 21rem;
+    height: 96vh;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#input {
+    box-sizing: border-box;
+    display: flex;
+    width: 20rem;
+    height: 4rem;
+    border: none;
+    color: white;
+    background-color: black;
+    margin: 0;
+    margin-top: 11rem;
+    padding: 0;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 5rem;
+    padding: 0.5rem;
+    text-align: right; 
+}
+
+
+.number {
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    background-color: grey;
+    margin: 0.5rem;
+}
+
+.number:hover{
+    background-color: lightgray;
+}
+
+#zero {
+    width: 9.5rem;
+}
+
+.operator {
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    background-color: orange;
+    margin: 0.5rem;
+}
+
+.executor:hover{
+    background-color: white;
+}
+
+.operator:hover {
+    background-color: white;
+    color: orange;
+}
+
+.executor {
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    border: none;
+    color: black;
+    font-size: 2rem;
+    background-color: lightgray;
+    margin: 0.5rem;
+}
+
+#image {
+    position: absolute;
+    height: 100vh;
+    pointer-events: none;
+}
+
+
+
+#timeDisplay {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 1.2rem; /* Adjust the top position as needed */
+    left: 39.8rem; /* Adjust the right position as needed */
+    font-size: 0.9rem;
+    color: white; 
+    z-index: 4;/* Adjust the color as needed */
+}
+
+#wifi {
+    position: absolute;
+    top: 1.2rem; /* Adjust the top position as needed */
+    left: 52.7rem; /* Adjust the right position as needed */
+    height: 2.5rem;
+    color: white; 
+    z-index: 0;/* Adjust the color as needed */
+    -webkit-filter: drop-shadow(10px 10px 10px #000000);
+    filter: drop-shadow(-5px -5px -5px #000000);
+}
+
+.selected {
+    background-color: white;
+    color: orange;
+}
+
+.numberPressed{
+    background-color: lightgrey;
+}
+
+/* Apply this style to remove the focus outline for all buttons */
+button:focus {
+    outline: none;
+}
+
+img{
+    -webkit-filter: drop-shadow(10px 10px 10px #ffffff);
+    filter: drop-shadow(-5px -5px -5px #ffffff);
+    z-index: -2;
+}
